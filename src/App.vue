@@ -44,7 +44,7 @@ export default{
     return {
       msg:'Vue',
       obj:{
-      name:'张三',
+      name:'李四',
       },
       list:['1','2','3'], 
       list1:[
@@ -70,6 +70,7 @@ export default{
       ],
       t:'hhhh',
       h:'1111',
+      
       
     }
   }
