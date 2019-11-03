@@ -10,7 +10,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 import Index from './components/Index.vue';
-import order from './components/order.vue';
+import order from './components/Order.vue';
 import search from './components/Search.vue';
 import mine from './components/Mine.vue';
 
