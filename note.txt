@@ -1,0 +1,16 @@
+手动按需引入组件
+在不使用插件的情况下，可以手动引入需要的组件
+
+import Button from 'vant/lib/button';
+import 'vant/lib/button/style';
+
+图片
+import takeaway from '../assets/images/takeaway.png'
+
+
+
+  { path: '/Search', component: Search },
+  { path: '/Mine', component: Mine },
+
+  import Search from './components/Search.vue';
+import Mine from './components/Mine.vue';

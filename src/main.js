@@ -3,39 +3,30 @@ import App from './App.vue'
 import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
 
-import './style/Home.css'
 
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
-Vue.use(MintUI)
-
-import { Tabbar, TabItem } from 'mint-ui';
-
-Vue.component(Tabbar.name, Tabbar);
-Vue.component(TabItem.name, TabItem);
-
-
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI);
-
+import 'vant/lib/index.css';
 Vue.use(VueResource)
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
-import Home from './components/Home.vue'
-import News from './components/News.vue'
-import Order from './components/Order.vue'
-import User from './components/User.vue'
+import Index from './components/Index.vue';
+import order from './components/order.vue';
+import search from './components/Search.vue';
+import mine from './components/Mine.vue';
+
+
 
 const routes = [
-  { path: '/Home', component: Home },
-  { path: '/News', component: News },
-  { path: '/Order', component: Order },
-  { path: '/User', component: User }
-]
+  { path: '/', component: Index },
+  { path: '/index', component: Index },
+  { path: '/order', component: order},
+  { path: '/search', component: search },
+  { path: '/mine', component: mine },
+  
+];
 
 const router = new VueRouter({
+  mode:'history',
   routes
 })
 new Vue({
