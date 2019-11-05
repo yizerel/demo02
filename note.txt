@@ -14,3 +14,15 @@ import takeaway from '../assets/images/takeaway.png'
 
   import Search from './components/Search.vue';
 import Mine from './components/Mine.vue';
+
+
+
+git:
+## 本地
+git add .
+git commit -m 'haha'
+git push
+
+## 服务器
+git pull
+npm run build

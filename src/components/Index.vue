@@ -40,12 +40,12 @@
             <van-tabbar-item
                 icon="coupon-o"
             >
-                <router-link to="/Index">首页</router-link>
+                <router-link to="/index">首页</router-link>
             </van-tabbar-item>
             <van-tabbar-item
                 icon="eye"
             >
-                <router-link to="/Search">发现</router-link>
+                <router-link to="/search">发现</router-link>
             </van-tabbar-item>
             <van-tabbar-item
                 icon="logistics"
@@ -55,7 +55,7 @@
             <van-tabbar-item
                 icon="manager"
             >
-                <router-link to="/Mine">我的</router-link> 
+                <router-link to="/mine">我的</router-link> 
             </van-tabbar-item>
         </van-tabbar>
     </div>
