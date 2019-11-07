@@ -1,42 +1,60 @@
 <template>
 
 <div>
-
-       
-<van-tabbar>
-            <van-tabbar-item
-                icon="coupon-o"
-            >
-                <router-link to="/index">首页</router-link>
-            </van-tabbar-item>
-            <van-tabbar-item
-                icon="eye"
-            >
-                <router-link to="/search">发现</router-link>
-            </van-tabbar-item>
-            <van-tabbar-item
-                icon="logistics"
-            >
-                <router-link to="/order">点餐</router-link> 
-            </van-tabbar-item>
-            <van-tabbar-item
-                icon="manager"
-            >
-                <router-link to="/mine">我的</router-link> 
-            </van-tabbar-item>
-        </van-tabbar>
+<van-nav-bar
+  title="设置"
+  left-text="返回"
+  left-arrow
+  @click-left="onClickLeft"
+  class="setting"
+/>
+<van-cell title="个人信息" is-link to="information" />
+<van-cell title="账号安全" is-link to="security" />
+<van-cell title="支付设置" is-link to="pay" />
+<van-cell title="收货地址" is-link to="address" value="修改/添加"/>
+  <van-tabbar>
+      <van-tabbar-item to="/" icon="coupon-o">
+      首页
+      </van-tabbar-item>
+      <van-tabbar-item to="/search" icon="eye">
+      发现
+      </van-tabbar-item>
+      <van-tabbar-item to="/order" icon="logistics">
+      点餐    
+      </van-tabbar-item>
+      <van-tabbar-item to="/mine" icon="manager">
+      我的 
+      </van-tabbar-item>
+  </van-tabbar>
 </div>
 </template>
 
 <script>
+import Vue from 'vue';
+import { Cell, CellGroup} from 'vant';
 
-    
+
+Vue.use(Cell).use(CellGroup);
+
+
+
 
 export default {
-   data(){
-    return{
+  data(){
+    return {}
+  },
+  methods: {
+    onClickLeft(){
+      this.$router.push({ name:"index" });
 
-}
-}
+    }
+  }
 }
 </script>
+<style  scoped>
+.setting >>> .van-nav-bar__text,
+.setting >>> .van-icon-arrow-left:before{
+  color:black;
+}
+</style>>
+

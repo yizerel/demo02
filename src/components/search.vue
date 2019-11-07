@@ -21,29 +21,24 @@
         </van-tab>
         </van-tabs>
         <van-tabbar>
-        <van-tabbar-item
-             icon="coupon-o"
-        >
-        <router-link to="/index">首页</router-link>
-        </van-tabbar-item>
-        <van-tabbar-item
-             icon="eye"
-        >
-        <router-link to="/search">发现</router-link>
-        </van-tabbar-item>
-        <van-tabbar-item
-             icon="logistics"
-        >
-    <router-link to="/order">点餐</router-link> 
-        </van-tabbar-item>
-        <van-tabbar-item
-             icon="manager"
-        >
-    <router-link to="/mine">我的</router-link> 
-        </van-tabbar-item>
+            <van-tabbar-item to="/" icon="coupon-o">
+            首页
+            </van-tabbar-item>
+            <van-tabbar-item to="/search" icon="eye">
+            发现
+            </van-tabbar-item>
+            <van-tabbar-item to="/order" icon="logistics">
+            点餐    
+            </van-tabbar-item>
+            <van-tabbar-item to="/mine" icon="manager">
+            我的 
+            </van-tabbar-item>
         </van-tabbar>
 </div>
 </template>
+
+
+
 
 <script>
 

@@ -12,7 +12,7 @@ import takeaway from '../assets/images/takeaway.png'
   { path: '/Search', component: Search },
   { path: '/Mine', component: Mine },
 
-  import Search from './components/Search.vue';
+import Search from './components/Search.vue';
 import Mine from './components/Mine.vue';
 
 
@@ -20,9 +20,18 @@ import Mine from './components/Mine.vue';
 git:
 ## 本地
 git add .
-git commit -m 'haha'
+git commit -m 'xxx'
 git push
 
 ## 服务器
 git pull
 npm run build
+
+箭头函数 
+
+var arr = [1,2,3];
+var fun2 = (ele, index) => {
+  consola.info('ele: ', ele, 'index: ', index);
+}
+
+arr.forEach(fun2);
