@@ -12,6 +12,8 @@
 <van-cell title="账号安全" is-link to="security" />
 <van-cell title="支付设置" is-link to="pay" />
 <van-cell title="收货地址" is-link to="address" value="修改/添加"/>
+
+
   <van-tabbar>
       <van-tabbar-item to="/" icon="coupon-o">
       首页
@@ -31,23 +33,24 @@
 
 <script>
 import Vue from 'vue';
-import { Cell, CellGroup} from 'vant';
+import { Cell, CellGroup, CouponCell, CouponList} from 'vant';
 
 
-Vue.use(Cell).use(CellGroup);
-
+Vue.use(Cell).use(CellGroup)
+.use(CouponCell).use(CouponList);
 
 
 
 export default {
   data(){
-    return {}
+    return {
+
+    }
   },
   methods: {
     onClickLeft(){
       this.$router.push({ name:"index" });
-
-    }
+    },
   }
 }
 </script>
