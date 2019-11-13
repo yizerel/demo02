@@ -12,13 +12,12 @@
   show-postal
   show-delete
   show-set-default
-  show-search-result
   :search-result="searchResult"
   :area-columns-placeholder="['请选择', '请选择', '请选择']"
   @save="onSave"
   @delete="onDelete"
-  @change-detail="onChangeDetail"
 />
+
 </div>
 </template>
 
@@ -34,26 +33,15 @@ export default {
   data() {
     return {
       areaList,
-      searchResult: []
     }
   },
 
   methods: {
     onSave() {
-      Toast('save');
+      Toast('保存成功');
     },
     onDelete() {
-      Toast('delete');
-    },
-    onChangeDetail(val) {
-      if (val) {
-        this.searchResult = [{
-          name: '',
-          address: ''
-        }];
-      } else {
-        this.searchResult = [];
-      }
+      Toast('已删除');
     },
     onClickLeft(){
     this.$router.push({ name:"mine" });

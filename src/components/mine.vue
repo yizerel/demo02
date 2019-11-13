@@ -14,7 +14,7 @@
 <van-cell title="收货地址" is-link to="address" value="修改/添加"/>
 
 
-  <van-tabbar>
+  <van-tabbar v-model="active">
       <van-tabbar-item to="/" icon="coupon-o">
       首页
       </van-tabbar-item>
@@ -44,7 +44,7 @@ Vue.use(Cell).use(CellGroup)
 export default {
   data(){
     return {
-
+    active:3,
     }
   },
   methods: {

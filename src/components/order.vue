@@ -127,7 +127,7 @@
 </template>
 
 </van-tree-select>
-    <van-tabbar>
+    <van-tabbar v-model="active">
         <van-tabbar-item to="/" icon="coupon-o">
             首页
         </van-tabbar-item>
@@ -165,6 +165,7 @@ export default {
     return{
       items: [{ text: '外卖' }, { text: '早餐' },{ text: '中餐' }, { text: '晚餐' }],
       activeIndex:0,
+      active:2,
       thumbImg1,
       thumbImg2,
       thumbImg3,
