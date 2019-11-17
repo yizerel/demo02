@@ -10,13 +10,13 @@
   <div slot="action" @:click="onSearch">搜索</div>
     </van-search>
     <van-swipe :autoplay="2000" indicator-color="white">
-    <van-swipe-item><img width="380" height="200" src="../assets/images/f1.jpg">
+    <van-swipe-item class="swipe-item"><img src="../assets/images/f1.jpg">
     </van-swipe-item>
-    <van-swipe-item><img width="380" height="200" src="../assets/images/f2.jpg">
+    <van-swipe-item class="swipe-item"><img src="../assets/images/f2.jpg">
     </van-swipe-item>
-    <van-swipe-item><img width="380" height="200" src="../assets/images/f3.jpg">
+    <van-swipe-item class="swipe-item"><img src="../assets/images/f3.jpg">
     </van-swipe-item>
-    <van-swipe-item><img width="370" height="200" src="../assets/images/f4.jpg">
+    <van-swipe-item class="swipe-item"><img src="../assets/images/f4.jpg">
     </van-swipe-item>
     </van-swipe>
 
@@ -98,5 +98,8 @@ export default {
   font-size: 18px;
   color:black;
   margin-left: 10px
+}
+.swipe-item img{
+  width: 100%;
 }
 </style>

@@ -18,6 +18,8 @@ import security from './components/security.vue';
 import pay from './components/pay.vue';
 import address from './components/address.vue';
 
+
+
 const routes = [
   { path: '/', name: 'index', component: index },
   { path: '/order', component: order},
