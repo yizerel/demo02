@@ -1,10 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "F:\\vue\\demo02"
-		}
-	],
-	"settings": {
-		"vetur.validation.script": false
-	}
+  "folders": [
+    {
+      "path": "F:\\vue\\demo02"
+    }
+  ],
+  "settings": {
+    "vetur.validation.script": false
+  }
 }

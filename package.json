@@ -24,6 +24,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -50,5 +51,3 @@
     "last 2 versions"
   ]
 }
-
-

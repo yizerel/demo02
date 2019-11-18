@@ -36,3 +36,19 @@ var fun2 = (ele, index) => {
 }
 
 arr.forEach(fun2);
+
+github.com/yizerel
+
+新项目  
+安装 node.js
+node -v 
+npm -v 
+安装cnpm
+npm install -g cnpm --registry=http://registry.npm.taobao.org
+
+安装webpack
+npm install webpack -g
+
+安装vue-cli
+cnpm install vue-cli -g
+
