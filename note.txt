@@ -23,7 +23,7 @@ git add .
 git commit -m 'xxx'
 git push
 
-## 服务器
+## 服务器   ssh yuheng@47.106.101.5
 git pull
 npm run build
 
